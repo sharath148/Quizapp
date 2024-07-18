@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Defines the character encoding for the document -->
+    <meta charset="UTF-8" />
+    <!-- Ensures the web page is properly scaled on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Specifies the title of the document -->
+    <title>Document</title>
+    <!-- Links the external CSS file to style the document -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Container for the start button and introductory text -->
+    <div class="start-btn-container">
+      <!-- Heading for the quiz introduction -->
+      <h2>General Knowledge</h2>
+      <!-- Description for the quiz -->
+      <p>Test your knowledge across various categories</p>
+      <!-- Button to start the quiz -->
+      <button class="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Container for the quiz content -->
+    <div class="quiz-container">
+      <!-- Main heading for the quiz -->
+      <h1>General Knowledge Quiz</h1>
+      <!-- Timer display for the quiz -->
+      <div class="timer">Time left: 10 seconds</div>
+      <!-- Element to display the current question -->
+      <h2 class="question"></h2>
+      <!-- Container for the answer options -->
+      <div class="options"></div>
+      <!-- Button to proceed to the next question -->
+      <button class="next-btn">Next</button>
+    </div>
+
+    <!-- Container for displaying the quiz result -->
+    <div class="quiz-result"></div>
+
+    <!-- Links the external JavaScript file for the quiz functionality -->
+    <script src="app.js"></script>
+  </body>
+</html>

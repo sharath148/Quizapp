@@ -1,0 +1,148 @@
+
+/* Styles for the timer inside the quiz container */
+.quiz-container .timer {
+    font-weight: bold; /* Makes the timer text bold */
+    text-align: right; /* Aligns the timer text to the right */
+}
+  
+/* Styles for the timer when in danger state (e.g., low time) */
+.timer.danger {
+    color: red; /* Changes the timer text color to red */
+}
+  
+/* Styles for the question text inside the quiz container */
+.quiz-container h2.question {
+    font-size: 20px; /* Sets the font size of the question text */
+    background: #d0ecff; /* Sets a light blue background color */
+    padding: 16px; /* Adds padding around the question text */
+    border-radius: 8px; /* Rounds the corners of the background */
+    font-weight: normal; /* Sets the font weight to normal */
+    line-height: 1.6; /* Sets the line height for better readability */
+}
+  
+/* Styles for the options container inside the quiz container */
+.quiz-container .options {
+    display: grid; /* Uses CSS grid layout */
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    gap: 16px; /* Adds a gap between the grid items */
+    margin-bottom: 20px; /* Adds a margin below the options */
+}
+  
+/* Styles for each option button inside the quiz container */
+.quiz-container .option {
+    border: none; /* Removes the default border */
+    padding: 24px 32px; /* Adds padding inside the button */
+    font-size: 18px; /* Sets the font size of the button text */
+    background: #1d3557; /* Sets a dark blue background color */
+    color: #fff; /* Sets the text color to white */
+}
+  
+/* General styles for buttons inside the quiz container */
+.quiz-container button {
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+  
+/* Styles for disabled elements to prevent interactions */
+.disabled {
+    pointer-events: none; /* Disables pointer events */
+}
+  
+/* Styles for correct answer options */
+.option.correct {
+    background: #51e351; /* Sets a green background color */
+    color: #222; /* Sets the text color to a dark shade */
+}
+  
+/* Styles for incorrect answer options */
+.option.incorrect {
+    background: #e63946; /* Sets a red background color */
+}
+  
+/* Styles for the next button and retake button */
+.quiz-container .next-btn,
+.quiz-result .retake-btn {
+    background: #222; /* Sets a dark background color */
+    color: #fff; /* Sets the text color to white */
+    border: none; /* Removes the default border */
+    padding: 12px 32px; /* Adds padding inside the button */
+    font-size: 20px; /* Sets the font size of the button text */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    font-weight: bold; /* Makes the text bold */
+    letter-spacing: 3px; /* Adds spacing between letters */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    width: fit-content; /* Adjusts the width to fit the content */
+}
+  
+/* Styles for the quiz result container */
+.quiz-result {
+    display: none; /* Hides the container by default */
+    flex-direction: column; /* Uses column flex layout */
+    gap: 24px; /* Adds a gap between flex items */
+    max-width: 900px; /* Sets a maximum width for the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    font-family: "Roboto", sans-serif; /* Sets the font family */
+    padding: 16px; /* Adds padding inside the container */
+}
+  
+/* Styles for each question container inside the quiz result */
+.quiz-result .question-container {
+    padding: 12px; /* Adds padding inside the container */
+    border: 1px solid #eee; /* Adds a light border */
+    display: flex; /* Uses flex layout */
+    flex-direction: column; /* Arranges items in a column */
+    gap: 10px; /* Adds a gap between flex items */
+}
+  
+/* Styles for incorrect question containers inside the quiz result */
+.quiz-result .question-container.incorrect {
+    background: #e63946; /* Sets a red background color */
+    color: #fff; /* Sets the text color to white */
+}
+  
+/* Styles for question numbers inside the quiz result */
+.question-number {
+    font-size: 16px; /* Sets the font size */
+    margin-right: 16px; /* Adds a right margin */
+    background: #1d3557; /* Sets a dark blue background color */
+    color: #fff; /* Sets the text color to white */
+    padding: 8px; /* Adds padding inside the container */
+    border-radius: 8px; /* Rounds the corners */
+}
+  
+/* Responsive styles for small screens */
+@media (max-width: 700px) {
+    .quiz-container .options {
+        grid-template-columns: 1fr; /* Changes to a single column layout */
+    }
+}
+  
+/* Styles for the start button container */
+.start-btn-container {
+    position: absolute; /* Positions the container absolutely */
+    top: 50%; /* Centers the container vertically */
+    left: 50%; /* Centers the container horizontally */
+    transform: translate(-50%, -50%); /* Translates to perfect center */
+    font-family: "Roboto", sans-serif; /* Sets the font family */
+    display: flex; /* Uses flex layout */
+    flex-direction: column; /* Arranges items in a column */
+    align-items: center; /* Centers items horizontally */
+}
+  
+/* Styles for the heading inside the start button container */
+.start-btn-container h2 {
+    font-size: 40px; /* Sets the font size */
+    margin: 0; /* Removes default margin */
+}
+  
+/* Styles for the start button */
+.start-btn-container .start-btn {
+    background: #e63946; /* Sets a red background color */
+    color: #fff; /* Sets the text color to white */
+    padding: 8px 32px; /* Adds padding inside the button */
+    border-radius: 8px; /* Rounds the corners */
+    border: none; /* Removes the default border */
+    font-size: 24px; /* Sets the font size of the button text */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    font-weight: bold; /* Makes the text bold */
+}
